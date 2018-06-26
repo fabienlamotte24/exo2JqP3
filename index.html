@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/jq/jquery-3.2.1.js"></script>
+  <title>Exercice 1</title>
+</head>
+<body>
+  <form>
+    <textarea name="texte" rows="8" cols="80" id="text"></textarea>
+    <button type="button" name="button" id="nbClickPlus">+</button>
+    <button type="button" name="button" id="nbClickMoins">-</button>
+  </form>
+  <script>
+  var click = 0;
+  $('#nbClickMoins').click(function(){
+    click--;
+    $('#text').text(click);
+  });
+  $('#nbClickPlus').click(function(){
+    click++;
+    $('#text').text(click);
+  });
+  </script>
+</body>
+</html>
